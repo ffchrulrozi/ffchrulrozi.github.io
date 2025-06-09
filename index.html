@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fachrul's Portofolio</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        section {
+            margin-bottom: 75px;
+        }
+
+        #panel-left {
+            text-align: right;
+            color: white;
+            background-color: #546e7a;
+            padding: 50px 20px 20px 20px;
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        #panel-left-divider {
+            height: 150px;
+        }
+
+        #panel-right {
+            height: 100vh;
+            overflow-y: scroll;
+            padding-top: 50px;
+        }
+
+        #photo {
+            border-radius: 200px;
+            margin-bottom: 20px;
+        }
+
+        #resume-btn {
+            background-color: #2196f3;
+            color: white;
+        }
+
+        #intro-title {
+            font-size: 24px;
+        }
+
+        #intro-desc {
+            font-size: 18px;
+        }
+
+        .box {
+            padding: 12px;
+        }
+
+        ul {
+            text-align: justify;
+        }
+
+        #box1 {
+            border-radius: 20px 5px 5px 20px;
+            border: 2px solid red;
+        }
+
+        #box2 {
+            border-radius: 5px 5px 5px 5px;
+            border: 2px solid teal;
+        }
+
+        #box3 {
+            border-radius: 5px 20px 20px 5px;
+            border: 2px solid blueviolet;
+        }
+
+        .card-body {
+            text-align: justify;
+            padding-right: 25px;
+        }
+
+        .card-title {
+            font-size: 16px;
+        }
+
+        .card-subtitle {
+            font-size: 14px;
+        }
+
+        .techstacks {
+            margin-top: 10px;
+        }
+
+        .techstack1 {
+            background: #607d8b;
+            color: white;
+        }
+
+        .techstack2 {
+            background: #5c6bc0;
+            color: white;
+        }
+
+        .techstack3 {
+            background: #009688;
+            color: white;
+        }
+
+        .techstack4 {
+            background: #1976d2;
+            color: white;
+        }
+
+        .techstack5 {
+            background: #673ab7;
+            color: white;
+        }
+
+        .project-card {
+            border-radius: 10px;
+            padding: 10px;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .project-card-1 {
+            border: 1px solid #607d8b;
+            border-left: 10px solid #607d8b;
+        }
+
+        .project-card-2 {
+            border: 1px solid #5c6bc0;
+            border-left: 10px solid #5c6bc0;
+        }
+
+        .project-card-3 {
+            border: 1px solid #009688;
+            border-left: 10px solid #009688;
+        }
+
+        .project-card-4 {
+            border: 1px solid #1976d2;
+            border-left: 10px solid #1976d2;
+        }
+
+        .project-card-5 {
+            border: 1px solid #8bc34a;
+            border-left: 10px solid #8bc34a;
+        }
+
+        .project-card-6 {
+            border: 1px solid #afb42b;
+            border-left: 10px solid #afb42b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3" id="panel-left">
+                <img src="./assets/img/me.jpg" alt="" width="175" height="175" id="photo">
+                <h1 id="intro-title">Hi, I am Fachrul</h1>
+                <h2 id="intro-desc">A full stack web developer and currently excited to explore more about mobile.</h2>
+                <div id="panel-left-divider"></div>
+                <div>
+                    <div>
+                        <i>ffchrulrozi[at]gmail.com</i>
+                        <img src="./assets/ico/email.svg" alt="email" height="20" width="20" background="white">
+                    </div>
+                    <div>
+                        <i>+6283896767623</i>
+                        <img src="./assets/ico/phone.svg" alt="phone" height="20" width="20">
+                    </div>
+                    <div>
+                        <i>ffchrulrozi.github.io</i>
+                        <img src="./assets/ico/github.svg" alt="github" height="20" width="20">
+                    </div>
+                    <div class="mt-3">
+                        <button type="button" class="btn" id="resume-btn">Download my
+                            resume here</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9" id="panel-right">
+                <div class="container">
+                    <section>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Hi, welcome to my portfolio 👋🏻</h3>
+                                <p>I am Fachrul Rozi, a Full Stack Web Developer.<br>
+                                    Coding is cool, it's fantastic you know? I have 5+ years experiences in backend
+                                    development. My hobby is exploring new tech, and now, i want to explore new thing,
+                                    something different, this is mobile development.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="mb-3">Skills</h3>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="box" id="box1">
+                                    <h4 class="title">
+                                        <img src="./assets/ico/backend.svg" alt="backend icon">
+                                        Backend
+                                    </h4>
+                                    <hr>
+                                    <ul>
+                                        <li>Experience in .NET development for 4 years.</li>
+                                        <li>Integrate with third party such as Microsoft API, LDAP, etc.</li>
+                                        <li>Integrate to Azure Kubernetes System, and deploy with Gitlab CI/CD.
+                                        </li>
+                                        <li>Experiences in Laravel and ActiveMQ.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="box" id="box2">
+                                    <h4 class="title">
+                                        <img src="./assets/ico/frontend.svg" alt="frontend icon">
+                                        Frontend
+                                    </h4>
+                                    <hr>
+                                    <ul>
+                                        <li>Experience in React JS development for 1+ years.</li>
+                                        <li>Use Next JS, Redux, AntD.</li>
+                                        <li>Experience use Type Script, Sass, Bootstrap, Tailwind, and Vue JS.</li>
+                                        <li>Also know about SEO technique and how integrate to Google Analytics.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="box" id="box3">
+                                    <h4 class="title">
+                                        <img src="./assets/ico/mobile.svg" alt="mobile icon">
+                                        Mobile
+                                    </h4>
+                                    <hr>
+                                    <ul>
+                                        <li>Currently excited to build Mobile App using Flutter.</li>
+                                        <li>Use Getx, Provider, or Riverpod as state management.</li>
+                                        <li>Use other library like Hive, SQLite, etc.</li>
+                                        <li>Integrate with firebase (auth, analytics, store, etc) and also One Signal.
+                                        </li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="mb-3">Experience of Works</h3>
+                        <div class="row mb-5">
+                            <div class="col-2">
+                                <img src="./assets/img/suitmedia.png" alt="suitmedia" height="60" width="150">
+                            </div>
+                            <div class="col-10">
+                                <h4>PT. Suitmedia Kreasi Indonesia</h4>
+                                <p>Jakarta, July 2021 - Now</p>
+                                <h5>Projects</h5>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="project-card project-card-1">
+                                            <div class="card-body">
+                                                <h5 class="card-title">eZRequest</h5>
+                                                <h5 class="card-subtitle">By. Anugrah
+                                                    Pharmindo
+                                                    Lestari</h5>
+                                                <p class="card-text">A pharmacy distribution platform. There are 3
+                                                    subsystems here:
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th width="100">System</th>
+                                                            <th>Description</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>iJKN</td>
+                                                            <td>: JKN (Jaminan Kesehatan Nasional) distribution.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>iDiscount</td>
+                                                            <td>: Regular transaction from a principal to customer.
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>iPesta</td>
+                                                            <td>: Distribute products among branches/warehouses.
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="techstacks">
+                                                    <span class="badge techstack1">.NET</span>
+                                                    <span class="badge techstack2">Micro Services</span>
+                                                    <span class="badge techstack3">Azure Kubernetes System</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="project-card project-card-2">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Master Apps</h5>
+                                                <h5 class="card-subtitle">By. Sarana Multi
+                                                    Infrastructure</h5>
+                                                <p class="card-text">A employee portal. Integrate with other systems
+                                                </p>
+                                                <div class="techstacks">
+                                                    <span class="badge techstack1">.NET</span>
+                                                    <span class="badge techstack2">Microsoft API</span>
+                                                    <span class="badge techstack3">LDAP Azure</span>
+                                                    <span class="badge techstack4">AWS</span>
+                                                    <span class="badge techstack5">K2 Black Pearl</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="project-card project-card-3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Website</h5>
+                                                <h5 class="card-subtitle">By. Bursa Efek
+                                                    Indonesia</h5>
+                                                <p class="card-text">Integrate several other systems as data source
+                                                    and
+                                                    show it
+                                                    to website</p>
+                                                <div class="techstacks">
+                                                    <span class="badge techstack1">.NET</span>
+                                                    <span class="badge techstack2">ActiveMQ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="project-card project-card-4">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Portal AK&P</h5>
+                                                <h5 class="card-subtitle">By. Kliring
+                                                    Penjaminan Efek Indonesia</h5>
+                                                <p class="card-text">A company portal</p>
+                                                <div class="techstacks">
+                                                    <span class="badge techstack1">.NET</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <div class="col-2">
+                                <img src="./assets/img/sevima.jpg" alt="sevima" height="60" width="150">
+                            </div>
+                            <div class="col-10">
+                                <h4>PT. Sentra Vidya Utama</h4>
+                                <p>Surabaya, March 2020 - June 2021</p>
+                                <h5>Product</h5>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="project-card project-card-5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Maukuliah</h5>
+                                                <p class="card-text">A platform for high school stdent who will/just
+                                                    graduated and want to seek informations about majors, colleges, up
+                                                    to register to a campus.</p>
+                                                <div class="techstacks">
+                                                    <span class="badge techstack1">Lumen</span>
+                                                    <span class="badge techstack2">Next JS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <div class="col-2">
+                                <img src="./assets/img/titipbeliin.jpg" alt="titipbeliin" height="60" width="150">
+                            </div>
+                            <div class="col-10">
+                                <h4>PT. Titipbeliin Global International</h4>
+                                <p>Yogyakarta, August 2018 - January 2019</p>
+                                <h5>Product</h5>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="project-card project-card-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Titipbeliin</h5>
+                                                <p class="card-text">A platform that allow users to buy products
+                                                    from several oversea ecommerce.</p>
+                                                <div class="techstacks">
+                                                    <span class="badge techstack1">Django</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="mb-3">Personal Projects</h3>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./assets/img/app1.png" class="img-fluid rounded-start" alt="app 1"
+                                                height="300" width="200">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Student Portal</h5>
+                                                <p class="card-text">See student report, scheduling, and other study
+                                                    info.
+                                                </p>
+                                                <div class="techstacks">
+                                                    <span class="badge techstack1">Flutter</span>
+                                                    <span class="badge techstack2">GetX</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./assets/img/app2.png" class="img-fluid rounded-start" alt="app 2"
+                                                height="300" width="200">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Gadget Store</h5>
+                                                <p class="card-text">Search and buy gadgets like laptop, smartphone,
+                                                    camera,
+                                                    and
+                                                    others.
+                                                </p>
+                                                <div class="techstacks">
+                                                    <span class="badge techstack1">Flutter</span>
+                                                    <span class="badge techstack2">Provider</span>
+                                                    <span class="badge techstack3">Firebase</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./assets/img/app3.png" class="img-fluid rounded-start" alt="app 3"
+                                                height="300" width="200">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">My Ticket</h5>
+                                                <p class="card-text">Search and book air plane, train, ship, bus, and
+                                                    hotel
+                                                    easily.</p>
+                                                <div class="techstacks">
+                                                    <span class="badge techstack1">Flutter</span>
+                                                    <span class="badge techstack2">Riverpod</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
