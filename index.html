@@ -29,6 +29,10 @@
             height: 150px;
         }
 
+        .icon {
+            filter: brightness(0) invert(1);
+        }
+
         #photo {
             border-radius: 200px;
             margin-bottom: 20px;
@@ -191,15 +195,15 @@
                 <div>
                     <div>
                         <i>ffchrulrozi[at]gmail.com</i>
-                        <img src="./assets/ico/email.svg" alt="email" height="20" width="20" background="white">
+                        <img src="./assets/ico/email.svg" alt="email" height="20" width="20" class="icon">
                     </div>
                     <div>
                         <i>+6283896767623</i>
-                        <img src="./assets/ico/phone.svg" alt="phone" height="20" width="20">
+                        <img src="./assets/ico/phone.svg" alt="phone" height="20" width="20" class="icon">
                     </div>
                     <div>
                         <i>ffchrulrozi.github.io</i>
-                        <img src="./assets/ico/github.svg" alt="github" height="20" width="20">
+                        <img src="./assets/ico/github.svg" alt="github" height="20" width="20" class="icon">
                     </div>
                     <div class="mt-3">
                         <a href="./assets/doc/resume.pdf" target="_blank" type="button" class="btn"
@@ -224,7 +228,7 @@
                     <section>
                         <h3 class="mb-3">Skills</h3>
                         <div class="row">
-                            <div class="col-sm-12 col-md-4">
+                            <div class="col-sm-12 col-md-4 mb-3">
                                 <div class="box" id="box1">
                                     <h4 class="title">
                                         <img src="./assets/ico/backend.svg" alt="backend icon">
@@ -240,7 +244,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-4">
+                            <div class="col-sm-12 col-md-4 mb-3">
                                 <div class="box" id="box2">
                                     <h4 class="title">
                                         <img src="./assets/ico/frontend.svg" alt="frontend icon">
@@ -251,11 +255,11 @@
                                         <li>Experience in React JS development for 1+ years.</li>
                                         <li>Use Next JS, Redux, AntD.</li>
                                         <li>Experience use Type Script, Sass, Bootstrap, Tailwind, and Vue JS.</li>
-                                        <li>Also know about SEO technique and how integrate to Google Analytics.</li>
+                                        <li>Also experience in SEO technique and integrate to Google Analytics.</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-4">
+                            <div class="col-sm-12 col-md-4 mb-3">
                                 <div class="box" id="box3">
                                     <h4 class="title">
                                         <img src="./assets/ico/mobile.svg" alt="mobile icon">
@@ -264,9 +268,10 @@
                                     <hr>
                                     <ul>
                                         <li>Currently excited to build Mobile App using Flutter.</li>
-                                        <li>Use Getx, Provider, or Riverpod as state management.</li>
-                                        <li>Use other library like Hive, SQLite, etc.</li>
-                                        <li>Integrate with firebase (auth, analytics, store, etc) and also One Signal.
+                                        <li>Use Getx or Provider as state management.</li>
+                                        <li>Use other library like Hive, Secure Storage, etc.</li>
+                                        <li>Integrate with firebase (auth, analytics, remote config, etc) and also One
+                                            Signal.
                                         </li>
                                     </ul>
                                     </p>
@@ -368,7 +373,7 @@
                                                 <h5 class="card-title">Portal AK&P</h5>
                                                 <h5 class="card-subtitle">By. Kliring
                                                     Penjaminan Efek Indonesia</h5>
-                                                <p class="card-text">A company portal</p>
+                                                <p class="card-text">A company portal for KPEI members.</p>
                                                 <div class="techstacks">
                                                     <span class="badge techstack1">.NET</span>
                                                 </div>
