@@ -158,9 +158,29 @@
         }
 
         .project-img {
-            width: 100px;
-            height:220px;
+            width: 157.5px;
+            height: 175px;
             object-fit: cover;
+        }
+        
+        #personal-project-1 {
+            border: 1px solid #2196F3;
+            border-left: 10px solid #2196F3;
+        }
+
+        #personal-project-2 {
+            border: 1px solid #9C27B0;
+            border-left: 10px solid #9C27B0;
+        }
+
+        #personal-project-3 {
+            border: 1px solid #009688;
+            border-left: 10px solid #009688;
+        }
+
+        #personal-project-4 {
+            border: 1px solid #4CAF50;
+            border-left: 10px solid #4CAF50;
         }
 
         @media screen and (min-width: 769px) {
@@ -269,8 +289,8 @@
                                     <hr>
                                     <ul>
                                         <li>Currently excited to build Mobile App using Flutter.</li>
-                                        <li>Use Getx, Provider, or Riverpod as state management.</li>
-                                        <li>Use other library like Hive, Secure Storage, etc.</li>
+                                        <li>Use Getx, Provider, Riverpod, or Bloc as state management.</li>
+                                        <li>Use storage like Hive, Secure Storage, SQLite.</li>
                                         <li>Integrate with firebase (auth, analytics, remote config, etc) and also One
                                             Signal.
                                         </li>
@@ -443,42 +463,73 @@
                             i can't list these, and only personal projects. These are several of my personal
                             projects below:</p>
                         <div class="row">
-                            <div class="col-sm-12 col-md-4">
-                                <div class="card mb-3">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="card mb-3" id="personal-project-4">
                                     <div class="row g-0">
-                                        <div class="col-sm-12 col-md-4">
-                                            <img src="./assets/img/app1.png" class="img-fluid rounded-start project-img"
-                                                alt="app 1">
+                                        <div class="col-sm-12 col-md-3">
+                                            <img src="./assets/img/app4.png" class="img-fluid rounded-start project-img"
+                                                alt="app 4">
                                         </div>
-                                        <div class="col-sm-12 col-md-8">
+                                        <div class="col-sm-12 col-md-9">
                                             <div class="card-body">
-                                                <h5 class="card-title">Student Portal</h5>
-                                                <p class="card-text">Student app. See report, read latest
-                                                    news, and more.<br />
-                                                    <a href="https://github.com/ffchrulrozi/student-portal"
-                                                        target="_blank">See in github</a>
+                                                <h5 class="card-title">My Budget</h5>
+                                                <p class="card-text">
+                                                    Write daily income and outcome, see it's summary and statistic.
+                                                    <br />
+                                                    <a href="https://github.com/ffchrulrozi/my-budget"
+                                                        target="_blank">See
+                                                        in github</a>
                                                 </p>
                                                 <div class="techstacks">
                                                     <span class="badge techstack1">Flutter</span>
-                                                    <span class="badge techstack2">GetX</span>
+                                                    <span class="badge techstack2">Bloc</span>
+                                                    <span class="badge techstack3">SQLite</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="card mb-3">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="card mb-3" id="personal-project-3">
                                     <div class="row g-0">
-                                        <div class="col-sm-12 col-md-4">
+                                        <div class="col-sm-12 col-md-3">
+                                            <img src="./assets/img/app3.png" class="img-fluid rounded-start project-img"
+                                                alt="app 3">
+                                        </div>
+                                        <div class="col-sm-12 col-md-9">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ticketpedia</h5>
+                                                <p class="card-text">
+                                                    Book any tickets for plane, train, concert, sports, and more.
+                                                    <br />
+                                                    <a href="https://github.com/ffchrulrozi/ticketpedia"
+                                                        target="_blank">See
+                                                        in github</a>
+                                                </p>
+                                                <div class="techstacks">
+                                                    <span class="badge techstack1">Flutter</span>
+                                                    <span class="badge techstack2">Riverpod</span>
+                                                    <span class="badge techstack3">Firebase</span>
+                                                    <span class="badge techstack4">Onesignal</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="card mb-3" id="personal-project-2">
+                                    <div class="row g-0">
+                                        <div class="col-sm-12 col-md-3">
                                             <img src="./assets/img/app2.png" class="img-fluid rounded-start project-img"
                                                 alt="app 2">
                                         </div>
-                                        <div class="col-sm-12 col-md-8">
+                                        <div class="col-sm-12 col-md-9">
                                             <div class="card-body">
                                                 <h5 class="card-title">NgeStore</h5>
                                                 <p class="card-text">
-                                                    Online shop. See products, add to cart, and more.
+                                                    A online shop app. See products, add it to cart, checkout, and more.
                                                     <br />
                                                     <a href="https://github.com/ffchrulrozi/nge-store"
                                                         target="_blank">See
@@ -494,28 +545,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="card mb-3">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="card mb-3" id="personal-project-1">
                                     <div class="row g-0">
-                                        <div class="col-sm-12 col-md-4">
-                                            <img src="./assets/img/app3.png" class="img-fluid rounded-start project-img"
-                                                alt="app 2">
+                                        <div class="col-sm-12 col-md-3">
+                                            <img src="./assets/img/app1.png" class="img-fluid rounded-start project-img"
+                                                alt="app 1">
                                         </div>
-                                        <div class="col-sm-12 col-md-8">
+                                        <div class="col-sm-12 col-md-9">
                                             <div class="card-body">
-                                                <h5 class="card-title">Ticketpedia</h5>
-                                                <p class="card-text">
-                                                    Book any tickets for plane, train, concert, sports, and more.
-                                                    <br />
-                                                    <a href="https://github.com/ffchrulrozi/ticketpedia"
-                                                        target="_blank">See
-                                                        in github</a>
+                                                <h5 class="card-title">Student Portal</h5>
+                                                <p class="card-text">Student app. See report, read latest
+                                                    news, and more.<br />
+                                                    <a href="https://github.com/ffchrulrozi/student-portal"
+                                                        target="_blank">See in github</a>
                                                 </p>
                                                 <div class="techstacks">
                                                     <span class="badge techstack1">Flutter</span>
-                                                    <span class="badge techstack2">Riverpod</span>
-                                                    <span class="badge techstack3">Firebase</span>
-                                                    <span class="badge techstack4">Onesignal</span>
+                                                    <span class="badge techstack2">GetX</span>
                                                 </div>
                                             </div>
                                         </div>
