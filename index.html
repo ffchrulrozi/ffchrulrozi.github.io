@@ -2,640 +2,443 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fachrul's Portofolio</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <style>
-        body {
-            font-size: 16px;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fachrul Rozi — Portfolio</title>
+  <meta name="description"
+    content="Fachrul Rozi, web developer with 7 years experience, now building mobile apps with Flutter.">
+  <meta property="og:title" content="Fachrul Rozi — Portfolio">
+  <meta property="og:description" content="Backend engineer who builds reliable systems. Now shipping Flutter apps.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=IBM+Plex+Mono:wght@500&display=swap">
+  <style>
+    html {
+      scroll-behavior: smooth
+    }
 
-        section {
-            margin-bottom: 50px;
-        }
+    body {
+      margin: 0
+    }
 
-        #panel-left {
-            text-align: right;
-            color: white;
-            background-color: #546e7a;
-            padding: 50px 20px 20px 20px;
-            border-radius: 0px 20px 20px 0px;
-        }
+    a {
+      color: #2437B8
+    }
 
-        #panel-left-divider {
-            height: 150px;
-        }
+    a:hover {
+      color: #0F172A
+    }
 
-        .icon {
-            filter: brightness(0) invert(1);
-        }
+    .shell {
+      display: flex;
+      min-height: 100vh;
+      overflow-x: clip
+    }
 
-        #photo {
-            border-radius: 200px;
-            margin-bottom: 20px;
-        }
+    .side {
+      width: 320px;
+      flex: none;
+      box-sizing: border-box;
+      background: #0F172A;
+      color: #fff;
+      padding: 48px 32px
+    }
 
-        #resume-btn {
-            background-color: #2196f3;
-            color: white;
-        }
+    .side-in {
+      position: sticky;
+      top: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px
+    }
 
-        #intro-title {
-            font-size: 24px;
-        }
+    .side a {
+      color: #CBD5E1;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px
+    }
 
-        #intro-desc {
-            font-size: 18px;
-        }
+    .side a:hover {
+      color: #fff
+    }
 
-        .box {
-            padding: 12px;
-        }
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 13px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      box-sizing: border-box
+    }
 
-        ul {
-            text-align: justify;
-        }
+    .main {
+      flex: 1;
+      min-width: 0;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 64px 72px;
+      display: flex;
+      flex-direction: column;
+      gap: 72px
+    }
 
-        #box1 {
-            border-radius: 20px 5px 5px 20px;
-            border: 2px solid red;
-        }
+    .eyebrow {
+      font: 500 12px 'IBM Plex Mono', monospace;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #475569;
+      margin: 0 0 12px
+    }
 
-        #box2 {
-            border-radius: 5px 5px 5px 5px;
-            border: 2px solid teal;
-        }
+    .h2 {
+      font-weight: 800;
+      font-size: 30px;
+      margin: 0 0 28px;
+      letter-spacing: -.01em
+    }
 
-        #box3 {
-            border-radius: 5px 20px 20px 5px;
-            border: 2px solid blueviolet;
-        }
+    .g3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px
+    }
 
-        .card-body {
-            text-align: justify;
-            padding-right: 25px;
-        }
+    .g2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px
+    }
 
-        .card-title {
-            font-size: 16px;
-        }
+    .card {
+      background: #fff;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 24px;
+      box-sizing: border-box
+    }
 
-        .card-subtitle {
-            font-size: 14px;
-        }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px
+    }
 
-        .techstacks {
-            margin-top: 10px;
-        }
+    .chip {
+      font: 500 12px 'IBM Plex Mono', monospace;
+      padding: 5px 10px;
+      height: 15px;
+      border-radius: 6px;
+      background: #EEF2FF;
+      color: #2437B8
+    }
 
-        .techstack1 {
-            background: #607d8b;
-            color: white;
-        }
+    .t {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px
+    }
 
-        .techstack2 {
-            background: #5c6bc0;
-            color: white;
-        }
+    .p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #475569
+    }
 
-        .techstack3 {
-            background: #009688;
-            color: white;
-        }
+    .job {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 28px
+    }
 
-        .techstack4 {
-            background: #1976d2;
-            color: white;
-        }
+    .job p{
+      text-align: justify;
+    }
 
-        .techstack5 {
-            background: #673ab7;
-            color: white;
-        }
+    .shot {
+      height: 150px;
+      border-radius: 10px;
+      background: #E2E8F0;
+      color: #475569;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: 500 12px 'IBM Plex Mono', monospace
+    }
 
-        .project-card {
-            border-radius: 10px;
-            padding: 10px;
-            padding-left: 20px;
-            margin-bottom: 15px;
-        }
+    .hs {
+      max-width: 100%;
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 16px;
+      scroll-snap-type: x mandatory
+    }
 
-        .project-card-1 {
-            border: 1px solid #607d8b;
-            border-left: 10px solid #607d8b;
-        }
+    .pcard {
+      flex: none;
+      width: 460px;
+      padding: 18px;
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+      align-content: start;
+      scroll-snap-align: start
+    }
 
-        .project-card-2 {
-            border: 1px solid #5c6bc0;
-            border-left: 10px solid #5c6bc0;
-        }
+    .pcard .shot {
+      grid-row: 1 / span 4;
+      height: 100%;
+      min-height: 0;
+      overflow: hidden
+    }
 
-        .project-card-3 {
-            border: 1px solid #009688;
-            border-left: 10px solid #009688;
-        }
+    .pcard .shot img {
+      height: 100%;
+      object-fit: contain
+    }
 
-        .project-card-4 {
-            border: 1px solid #1976d2;
-            border-left: 10px solid #1976d2;
-        }
+    .pcard > a {
+      font-size: 13px
+    }
 
-        .project-card-5 {
-            border: 1px solid #673ab7;
-            border-left: 10px solid #673ab7;
-        }
+    .pcard > .chips {
+      transform: translateY(20px)
+    }
 
-        .project-card-6 {
-            border: 1px solid #afb42b;
-            border-left: 10px solid #afb42b;
-        }
+    @media (max-width:860px) {
+      .shell {
+        flex-direction: column
+      }
 
-        .project-card-7 {
-            border: 1px solid #8bc34a;
-            border-left: 10px solid #8bc34a;
-        }
+      .side {
+        width: auto
+      }
 
-        .project-card-8 {
-            border: 1px solid #c34aa7;
-            border-left: 10px solid #c34aa7;
-        }
+      .side-in {
+        position: static
+      }
 
-        a {
-            text-decoration: none;
-        }
+      .main {
+        padding: 40px 24px;
+        gap: 56px
+      }
 
-        .project-img {
-            width: 157.5px;
-            height: 175px;
-            object-fit: cover;
-        }
+      .g3,
+      .job {
+        grid-template-columns: 1fr;
+        gap: 16px
+      }
 
-        #personal-project-1 {
-            border: 1px solid #2196F3;
-            border-left: 10px solid #2196F3;
-        }
+      .pcard {
+        width: 280px;
+        grid-template-columns: 96px 1fr
+      }
 
-        #personal-project-2 {
-            border: 1px solid #9C27B0;
-            border-left: 10px solid #9C27B0;
-        }
-
-        #personal-project-3 {
-            border: 1px solid #4050B5;
-            border-left: 10px solid #4050B5;
-        }
-
-        #personal-project-4 {
-            border: 1px solid #4CAF50;
-            border-left: 10px solid #4CAF50;
-        }
-
-        @media screen and (min-width: 769px) {
-            #panel-right {
-                height: 100vh;
-                overflow-y: scroll;
-                padding-top: 50px;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-            #panel-right {
-                padding-top: 50px;
-            }
-
-            .project-img {
-                max-height: 125px;
-                width: 75%;
-                object-fit: cover;
-            }
-        }
-    </style>
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-md-3" id="panel-left">
-                <img src="./assets/img/me.jpg" alt="" width="175" height="175" id="photo">
-                <h1 id="intro-title">Hi, I am Fachrul</h1>
-                <h2 id="intro-desc">A full stack web developer and currently excited to explore more about mobile.</h2>
-                <div id="panel-left-divider"></div>
-                <div>
-                    <div>
-                        <i>ffchrulrozi[at]gmail.com</i>
-                        <img src="./assets/ico/email.svg" alt="email" height="20" width="20" class="icon">
-                    </div>
-                    <div>
-                        <i>+6283896767623</i>
-                        <img src="./assets/ico/phone.svg" alt="phone" height="20" width="20" class="icon">
-                    </div>
-                    <div>
-                        <i>ffchrulrozi.github.io</i>
-                        <img src="./assets/ico/github.svg" alt="github" height="20" width="20" class="icon">
-                    </div>
-                    <div class="mt-3">
-                        <a href="./assets/doc/resume.pdf" target="_blank" type="button" class="btn"
-                            id="resume-btn">Download my
-                            resume here</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-9" id="panel-right">
-                <div class="container">
-                    <section>
-                        <div class="row">
-                            <div class="col-12">
-                                <h3>Hi, welcome to my portfolio 👋🏻</h3>
-                                <p>I am Fachrul Rozi, a Full Stack Web Developer.<br>
-                                    Coding is cool, it's fantastic you know? I have 5+ years experiences in backend
-                                    development. My hobby is exploring new tech, and now, i want to explore new thing,
-                                    something different, this is mobile development.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="mb-3">Skills</h3>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-4 mb-3">
-                                <div class="box" id="box1">
-                                    <h4 class="title">
-                                        <img src="./assets/ico/backend.svg" alt="backend icon">
-                                        Backend
-                                    </h4>
-                                    <hr>
-                                    <ul>
-                                        <li>Experience in .NET development for 4+ years and Laravel for 1+ years.</li>
-                                        <li>Integrate with third party such as Microsoft API, LDAP, etc.</li>
-                                        <li>Deploy to Azure Kubernetes System using Gitlab CI/CD.</li>
-                                        <li>Also know about Go, message broker (ActiveMQ), and more.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 mb-3">
-                                <div class="box" id="box2">
-                                    <h4 class="title">
-                                        <img src="./assets/ico/frontend.svg" alt="frontend icon">
-                                        Frontend
-                                    </h4>
-                                    <hr>
-                                    <ul>
-                                        <li>Experience in React/Next JS development for 1+ years.</li>
-                                        <li>Implement Redux, AntD, Type Script to React app.</li>
-                                        <li>Also experience use Sass, Bootstrap, Tailwind, and Vue JS.</li>
-                                        <li>And know about SEO technique and integrate to Google Analytics.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 mb-3">
-                                <div class="box" id="box3">
-                                    <h4 class="title">
-                                        <img src="./assets/ico/mobile.svg" alt="mobile icon">
-                                        Mobile
-                                    </h4>
-                                    <hr>
-                                    <ul>
-                                        <li>Currently excited to build Mobile App using Flutter.</li>
-                                        <li>Use Getx, Provider, Riverpod, or Bloc as state management.</li>
-                                        <li>Use storage like Hive, Secure Storage, SQLite.</li>
-                                        <li>Integrate with firebase (auth, analytics, remote config, etc) and also One
-                                            Signal.
-                                        </li>
-                                    </ul>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="mb-3">Experience of Works</h3>
-                        <div class="row mb-5">
-                            <div class="col-sm-12 col-md-2">
-                                <img src="./assets/img/suitmedia.png" alt="suitmedia" height="60" width="150">
-                            </div>
-                            <div class="col-sm-12 col-md-10">
-                                <h4>PT. Suitmedia Kreasi Indonesia</h4>
-                                <p>Jakarta, July 2021 - Now</p>
-                                <h5>Projects</h5>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="project-card project-card-1">
-                                            <div class="card-body">
-                                                <h5 class="card-title">APL e-PO</h5>
-                                                <h5 class="card-subtitle">By. Anugerah Pharmindo Lestari</h5>
-                                                <p class="card-text">An electronic purchase order system. This app process orders those come from multi app channel (like iDiscount, iJKN, and others APL's order platforms). There are 2
-                                                    subsystems here:
-                                                <table>
-                                                    <thead>
-                                                        <tr>
-                                                            <th width="110">System</th>
-                                                            <th>Description</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Customer App</td>
-                                                            <td>: Mainly used by customer to do their order approval and reporting.
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>BRQA Portal</td>
-                                                            <td>: Mainly used by BRQA (a role in APL's side) to order approval and reporting based on their branch.
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">.NET</span>
-                                                    <span class="badge techstack2">Azure Kubernetes System</span>
-                                                    <span class="badge techstack3">SAP Integration</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="project-card project-card-2">
-                                            <div class="card-body">
-                                                <h5 class="card-title">APL Request</h5>
-                                                <h5 class="card-subtitle">By. Anugerah Pharmindo Lestari</h5>
-                                                <p class="card-text">A pharmacy distribution platform. There are 3
-                                                    subsystems here:
-                                                <table>
-                                                    <thead>
-                                                        <tr>
-                                                            <th width="100">System</th>
-                                                            <th>Description</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>iJKN</td>
-                                                            <td>: JKN (Jaminan Kesehatan Nasional) distribution.
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>iDiscount</td>
-                                                            <td>: Regular transaction from a principal to customer.
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>iPesta</td>
-                                                            <td>: Distribute products among branches/warehouses.
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">.NET</span>
-                                                    <span class="badge techstack2">Micro Services</span>
-                                                    <span class="badge techstack3">Azure Kubernetes System</span>
-                                                    <span class="badge techstack4">SAP Integration</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="project-card project-card-3">
-                                            <div class="card-body">
-                                                <h5 class="card-title">IDX SPOP</h5>
-                                                <h5 class="card-subtitle">By. Bursa Efek
-                                                    Indonesia</h5>
-                                                <p class="card-text">Fix and enhance features for Sistem Pendukung
-                                                    Operasional Perdagangan (Trading Operational Support System)</p>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">.NET</span>
-                                                    <span class="badge techstack2">ActiveMQ</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="project-card project-card-4">
-                                            <div class="card-body">
-                                                <h5 class="card-title">SMI Master Apps</h5>
-                                                <h5 class="card-subtitle">By. Sarana Multi
-                                                    Infrastructure</h5>
-                                                <p class="card-text">A employee portal. Integrate with other systems
-                                                </p>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">.NET</span>
-                                                    <span class="badge techstack2">Microsoft API</span>
-                                                    <span class="badge techstack3">LDAP Azure</span>
-                                                    <span class="badge techstack4">AWS</span>
-                                                    <span class="badge techstack5">K2 Black Pearl</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="project-card project-card-5">
-                                            <div class="card-body">
-                                                <h5 class="card-title">IDX Website</h5>
-                                                <h5 class="card-subtitle">By. Bursa Efek
-                                                    Indonesia</h5>
-                                                <p class="card-text">Integrate several other systems as data source
-                                                    and
-                                                    show it
-                                                    to website</p>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">.NET</span>
-                                                    <span class="badge techstack2">ActiveMQ</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="project-card project-card-6">
-                                            <div class="card-body">
-                                                <h5 class="card-title">KPEI Portal AK&P</h5>
-                                                <h5 class="card-subtitle">By. Kliring
-                                                    Penjaminan Efek Indonesia</h5>
-                                                <p class="card-text">A company portal for KPEI members.</p>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">.NET</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-5">
-                            <div class="col-sm-12 col-md-2">
-                                <img src="./assets/img/sevima.jpg" alt="sevima" height="60" width="150">
-                            </div>
-                            <div class="col-sm-12 col-md-10">
-                                <h4>PT. Sentra Vidya Utama</h4>
-                                <p>Surabaya, March 2020 - June 2021</p>
-                                <h5>Product</h5>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="project-card project-card-7">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Maukuliah</h5>
-                                                <p class="card-text">A platform for high school stdent who will/just
-                                                    graduated and want to seek informations about majors, colleges, up
-                                                    to register to a campus.</p>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">Lumen</span>
-                                                    <span class="badge techstack2">Next JS</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-5">
-                            <div class="col-sm-12 col-md-2">
-                                <img src="./assets/img/titipbeliin.jpg" alt="titipbeliin" height="60" width="150">
-                            </div>
-                            <div class="col-sm-12 col-md-10">
-                                <h4>PT. Titipbeliin Global International</h4>
-                                <p>Yogyakarta, August 2018 - January 2019</p>
-                                <h5>Product</h5>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="project-card project-card-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Titipbeliin</h5>
-                                                <p class="card-text">A platform that allow users to buy products
-                                                    from several oversea ecommerce.</p>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">Django</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="mb-3">Personal Projects</h3>
-                        <p>I never got real projects using flutter, because i am new in this field. So,
-                            i can't list these, and only personal projects. These are several of my personal
-                            projects below:</p>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                <div class="card mb-3" id="personal-project-1">
-                                    <div class="row g-0">
-                                        <div class="col-sm-12 col-md-3">
-                                            <img src="./assets/img/app1.png" class="img-fluid rounded-start project-img"
-                                                alt="app 1">
-                                        </div>
-                                        <div class="col-sm-12 col-md-9">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Student Portal</h5>
-                                                <p class="card-text">Student app. See report, read latest
-                                                    news, and more.<br />
-                                                    <a href="https://github.com/ffchrulrozi/student-portal"
-                                                        target="_blank">See in github</a>
-                                                </p>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">Flutter</span>
-                                                    <span class="badge techstack2">GetX</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-12 col-md-6">
-                                <div class="card mb-3" id="personal-project-2">
-                                    <div class="row g-0">
-                                        <div class="col-sm-12 col-md-3">
-                                            <img src="./assets/img/app2.png" class="img-fluid rounded-start project-img"
-                                                alt="app 2">
-                                        </div>
-                                        <div class="col-sm-12 col-md-9">
-                                            <div class="card-body">
-                                                <h5 class="card-title">NgeStore</h5>
-                                                <p class="card-text">
-                                                    A online shop app. See products, add it to cart, checkout, and more.
-                                                    <br />
-                                                    <a href="https://github.com/ffchrulrozi/nge-store"
-                                                        target="_blank">See
-                                                        in github</a>
-                                                </p>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">Flutter</span>
-                                                    <span class="badge techstack2">Provider</span>
-                                                    <span class="badge techstack3">Firebase</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="card mb-3" id="personal-project-3">
-                                    <div class="row g-0">
-                                        <div class="col-sm-12 col-md-3">
-                                            <img src="./assets/img/app3.png" class="img-fluid rounded-start project-img"
-                                                alt="app 3">
-                                        </div>
-                                        <div class="col-sm-12 col-md-9">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Chatty</h5>
-                                                <p class="card-text">
-                                                    A Messaging app.
-                                                    <br />
-                                                    <a href="https://github.com/ffchrulrozi/chatty"
-                                                        target="_blank">See
-                                                        in github</a>
-                                                </p>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">Flutter</span>
-                                                    <span class="badge techstack2">Riverpod</span>
-                                                    <span class="badge techstack3">Firebase</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="card mb-3" id="personal-project-4">
-                                    <div class="row g-0">
-                                        <div class="col-sm-12 col-md-3">
-                                            <img src="./assets/img/app4.png" class="img-fluid rounded-start project-img"
-                                                alt="app 4">
-                                        </div>
-                                        <div class="col-sm-12 col-md-9">
-                                            <div class="card-body">
-                                                <h5 class="card-title">My Budget</h5>
-                                                <p class="card-text">
-                                                    Write daily income and outcome, see it's summary and statistic.
-                                                    <br />
-                                                    <a href="https://github.com/ffchrulrozi/my-budget"
-                                                        target="_blank">See
-                                                        in github</a>
-                                                </p>
-                                                <div class="techstacks">
-                                                    <span class="badge techstack1">Flutter</span>
-                                                    <span class="badge techstack2">Bloc</span>
-                                                    <span class="badge techstack3">SQLite</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
+  <div class="shell" style="--accent: #2F5BFF; font-family: Manrope, sans-serif; color: #0F172A; background: #F4F6F8;">
+    <aside class="side">
+      <div class="side-in">
+        <div
+          style="width: 150px; height: 150px; border-radius: 50%; background-image: url('./assets/img/me.jpg'); background-size:cover; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 36px">
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
+        <div>
+          <h1 style="margin: 0; font-size: 28px; font-weight: 800">Fachrul Rozi</h1>
+          <p style="margin: 6px 0 0; color: #CBD5E1; font-size: 15px; line-height: 1.5">Full stack web developer, now
+            exploring mobile with Flutter.</p>
+        </div>
+        <nav style="display: flex; flex-direction: column; gap: 12px; padding: 12px 0">
+          <a href="#skills">Skills</a>
+          <a href="#experience">Work Experience</a>
+          <a href="#projects">Personal Projects</a>
+        </nav>
+        <a class="btn" href="https://ffchrulrozi.github.io/assets/doc/resume.pdf"
+          style="background: var(--accent); color: #fff">Download resume</a>
+        <a class="btn" href="mailto:ffchrulrozi@gmail.com" style="border: 1px solid #475569; color: #fff">Email me</a>
+        <div style="display: flex; gap: 20px">
+          <a href="https://github.com/ffchrulrozi">GitHub</a>
+          <a href="https://www.linkedin.com/in/ffchrulrozi/">LinkedIn</a>
+        </div>
+      </div>
+    </aside>
+    <main class="main">
+      <section>
+        <p class="eyebrow">Hi, welcome to my portfolio</p>
+        <h2
+          style="margin: 0; font-weight: 800; font-size: 46px; line-height: 1.12; letter-spacing: -.02em; max-width: 760px">
+          Backend engineer who builds reliable systems. Now shipping Flutter apps.</h2>
+        <p class="p" style="margin-top: 20px; max-width: 640px; font-size: 17px">I have 7 years of experience building
+          enterprise platforms in .NET. I love exploring new tech, and mobile development is my next step.</p>
+        <div style="display: flex; gap: 40px; margin-top: 32px">
+          <div>
+            <div style="font-size: 30px"><b>7</b> years</div>
+            <div class="p">as backend dev.</div>
+          </div>
+          <div>
+            <div style="font-size: 30px"><b>3</b> companies</div>
+            <div class="p">of work experiences</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="h2">Skills</h2>
+        <div class="g3">
+          <div class="card" style="display: flex; flex-direction: column; gap: 16px">
+            <h3 class="t">Backend</h3>
+            <p class="p">.NET 5+ years, Laravel 1+ year. Integrations and cloud deployment.</p>
+            <div class="chips"><span class="chip">.NET</span><span class="chip">Laravel</span><span
+                class="chip">Django</span><span class="chip">ActiveMQ</span><span class="chip">Azure/Google
+                Kubernetes</span>
+            </div>
+          </div>
+          <div class="card" style="display: flex; flex-direction: column; gap: 16px">
+            <h3 class="t">Frontend</h3>
+            <p class="p">React and Next.js for 1+ year, with SEO and analytics.</p>
+            <div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span
+                class="chip">Redux</span><span class="chip">Ant Design</span>
+              <span class="chip">Sass</span><span class="chip">Vue</span>
+            </div>
+          </div>
+          <div class="card" style="display: flex; flex-direction: column; gap: 16px; border-color: var(--accent)">
+            <h3 class="t">Mobile</h3>
+            <p class="p">Currently building apps with Flutter and several state managers.</p>
+            <div class="chips"><span class="chip">Flutter</span><span class="chip">GetX</span><span
+                class="chip">Provider</span><span class="chip">Riverpod</span><span class="chip">Bloc</span><span
+                class="chip">Hive</span><span class="chip">SQLite</span><span class="chip">Firebase</span><span
+                class="chip">OneSignal</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2 class="h2">Work Experience</h2>
+        <div style="display: flex; flex-direction: column; gap: 20px">
+          <div class="card job">
+            <div>
+              <div style="font-weight: 700">Jul 2021 - Now</div>
+              <div class="p">Jakarta</div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 14px">
+              <div>
+                <h3 class="t">PT. Suitmedia Kreasi Indonesia</h3>
+                <p class="p">Backend Developer</p>
+              </div>
+              <p class="p"><b style="color: #0F172A">APL e-PO</b> — electronic purchase order system.
+                There are 2 main applications here: e-PO app (for APL's internal user), and SP Elektronik app (for
+                customer user).
+                Retrieve data from multi channels (10+ platform), integrate client's APIs/SAP BAPIs, approval, tracking,
+                invoicing, up to handle tax. Manage to complete security issues issued by Crowd Strike.
+                <br /> Tech stacks: .NET, AKS, GKE, WA notification,
+                e-Meterai.
+              </p>
+              <p class="p"><b style="color: #0F172A">APL eZRequest</b> — pharmacy distribution platform.
+                There are 3 main systems here: iDiscount (for regular orders), iJKN (for Jaminan Kesehatan Nasional
+                orders),
+                and iPesta (for supply chain among branches). Integrate client's APIs/SAP BAPIs, approval, up to
+                tracking.
+                <br /> Tech stacks: .NET, Micro Services, AKS.
+              </p>
+              <p class="p"><b style="color: #0F172A">IDX SPOP</b> — trading operations support system, handle LP Saham
+                and LPWT management.
+                <br /> Tech stacks: .NET, Active MQ.
+              </p>
+              <p class="p"><b style="color: #0F172A">IDX Website</b> — IDX's public website, consume data from several
+                platforms then show it into website.
+                <br /> Tech stacks: .NET, Active MQ.
+              </p>
+              <p class="p"><b style="color: #0F172A">SMI Master Apps</b> — employee portal website. Integrate LDAP
+                Azure and One Drive, integrate other systems (using K2), outcoming letter, task management, etc.
+                <br /> Tech stacks: .NET, Azure, AWS.
+              </p>
+              <p class="p"><b style="color: #0F172A">KPEI Portal AK&P</b> — company portal for KPEI's members.
+                <br /> Tech stacks: .NET
+              </p>
+            </div>
+          </div>
+          <div class="card job">
+            <div>
+              <div style="font-weight: 700">Mar 2020 - Jun 2021</div>
+              <div class="p">Surabaya</div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <div>
+                <h3 class="t">PT. Sentra Vidya Utama</h3>
+                <p class="p">Fullstack Web Developer</p>
+              </div>
+              <p class="p"><b style="color: #0F172A">Maukuliah</b> — platform for high school students to explore majors
+                and colleges up to register to campuses.
+                <br /> Tech stacks: Lumen, Next.JS, SEO, Google Analytic.</p>
+            </div>
+          </div>
+          <div class="card job">
+            <div>
+              <div style="font-weight: 700">Aug 2018 - Jan 2019 </div>
+              <div class="p">Yogyakarta</div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <div>
+                <h3 class="t">PT. Dwitama Global Persada</h3>
+                <p class="p">Backend Developer</p>
+              </div>
+              <p class="p"><b style="color: #0F172A">Titipbeliin</b> — platform to buy products from overseas e-commerce
+                sites.
+                <br /> Tech stacks: Django.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="h2">Personal Projects</h2>
+        <div style="font-weight: 500; color: #475569; margin-bottom: 25px;">Currently i'am enthusiast to learn mobile
+          development using
+          Flutter. Due to i'm new in this field, so i never experience in real projects. So, i built these sample
+          personal projects. Here list of my sample projects using flutter:</div>
+        <div class="hs">
+          <div class="card pcard">
+            <div class="shot"><img src="./assets/img/app1.png" alt="" style="width: 100%;"></div>
+            <h3 class="t">Student Portal</h3>
+            <p class="p">Student app to see reports, read the latest news, and more.</p>
+            <a href="https://github.com/ffchrulrozi/student-portal" style="font-weight: 700">View on GitHub</a>
+            <div class="chips"><span class="chip">Flutter</span><span class="chip">GetX</span></div>
+          </div>
+          <div class="card pcard">
+            <div class="shot"><img src="./assets/img/app2.png" alt="" style="width: 100%;"></div>
+            <h3 class="t">NgeStore</h3>
+            <p class="p">Online shop app with product list, cart, and checkout.</p>
+            <a href="https://github.com/ffchrulrozi/nge-store" style="font-weight: 700">View on GitHub</a>
+            <div class="chips"><span class="chip">Flutter</span><span class="chip">Provider</span><span
+                class="chip">Firebase</span></div>
+          </div>
+          <div class="card pcard">
+            <div class="shot"><img src="./assets/img/app3.png" alt="" style="width: 100%;"></div>
+            <h3 class="t">Chatty</h3>
+            <p class="p">Messaging app with real-time chat.</p>
+            <a href="https://github.com/ffchrulrozi/chatty" style="font-weight: 700">View on GitHub</a>
+            <div class="chips"><span class="chip">Flutter</span><span class="chip">Riverpod</span><span
+                class="chip">Firebase</span></div>
+          </div>
+          <div class="card pcard">
+            <div class="shot"><img src="./assets/img/app4.png" alt="" style="width: 100%;"></div>
+            <h3 class="t">My Budget</h3>
+            <p class="p">Record daily income and expenses, with summary and statistics.</p>
+            <a href="https://github.com/ffchrulrozi/my-budget" style="font-weight: 700">View on GitHub</a>
+            <div class="chips"><span class="chip">Flutter</span><span class="chip">Bloc</span><span
+                class="chip">SQLite</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 
 </html>
